@@ -1,0 +1,1201 @@
+"D","names","id"
+0.0786818862680805,"Uniform Sample",1
+0.126793625349913,"Biased Sample",1
+0.0784418125412961,"Uniform Sample",2
+0.132038180017786,"Biased Sample",2
+0.0819432153225377,"Uniform Sample",3
+0.118686291219918,"Biased Sample",3
+0.0726654812926976,"Uniform Sample",4
+0.124539675104536,"Biased Sample",4
+0.0764670528345827,"Uniform Sample",5
+0.129634822199955,"Biased Sample",5
+0.0708656103946004,"Uniform Sample",6
+0.119341302299171,"Biased Sample",6
+0.0766977565271506,"Uniform Sample",7
+0.116981741787165,"Biased Sample",7
+0.0811558664995862,"Uniform Sample",8
+0.12698280963765,"Biased Sample",8
+0.0722174290904204,"Uniform Sample",9
+0.116937373958803,"Biased Sample",9
+0.0757678309509766,"Uniform Sample",10
+0.12176785632501,"Biased Sample",10
+0.0758347063784022,"Uniform Sample",11
+0.125705383651044,"Biased Sample",11
+0.0784578193228401,"Uniform Sample",12
+0.121209861179781,"Biased Sample",12
+0.0801411133427042,"Uniform Sample",13
+0.122426627327562,"Biased Sample",13
+0.0742360294846457,"Uniform Sample",14
+0.125993920038358,"Biased Sample",14
+0.0796189734250864,"Uniform Sample",15
+0.12229571179106,"Biased Sample",15
+0.0771499786348651,"Uniform Sample",16
+0.118265074097547,"Biased Sample",16
+0.0738617036416228,"Uniform Sample",17
+0.120632648190596,"Biased Sample",17
+0.0803943606806757,"Uniform Sample",18
+0.120337105038198,"Biased Sample",18
+0.0770614050661205,"Uniform Sample",19
+0.118051993521712,"Biased Sample",19
+0.081126170789881,"Uniform Sample",20
+0.123088559039738,"Biased Sample",20
+0.0751528497491286,"Uniform Sample",21
+0.125217302841079,"Biased Sample",21
+0.079212862180812,"Uniform Sample",22
+0.126416209152256,"Biased Sample",22
+0.0797291521138173,"Uniform Sample",23
+0.121696896475709,"Biased Sample",23
+0.0809462487816977,"Uniform Sample",24
+0.11834428377261,"Biased Sample",24
+0.0768194783353603,"Uniform Sample",25
+0.12328774589151,"Biased Sample",25
+0.0814312138712928,"Uniform Sample",26
+0.115723319164372,"Biased Sample",26
+0.0795728138570323,"Uniform Sample",27
+0.119603679844046,"Biased Sample",27
+0.0784888918521208,"Uniform Sample",28
+0.12216231186879,"Biased Sample",28
+0.071903571097943,"Uniform Sample",29
+0.128556624903606,"Biased Sample",29
+0.0699975158270077,"Uniform Sample",30
+0.117272570027626,"Biased Sample",30
+0.0751228051619545,"Uniform Sample",31
+0.126393454558977,"Biased Sample",31
+0.0797587891727878,"Uniform Sample",32
+0.120725799538918,"Biased Sample",32
+0.077284567214879,"Uniform Sample",33
+0.123774700219381,"Biased Sample",33
+0.080438861055073,"Uniform Sample",34
+0.124463981305901,"Biased Sample",34
+0.0762421518910062,"Uniform Sample",35
+0.122064986871891,"Biased Sample",35
+0.0753967902555629,"Uniform Sample",36
+0.120514608109829,"Biased Sample",36
+0.0744828121836959,"Uniform Sample",37
+0.127850226798531,"Biased Sample",37
+0.0749816526602811,"Uniform Sample",38
+0.119563240809538,"Biased Sample",38
+0.0780387549000828,"Uniform Sample",39
+0.121724578033844,"Biased Sample",39
+0.0797288606767421,"Uniform Sample",40
+0.120695876497872,"Biased Sample",40
+0.081690940425718,"Uniform Sample",41
+0.119727395250968,"Biased Sample",41
+0.0776297466153057,"Uniform Sample",42
+0.122801121727829,"Biased Sample",42
+0.0793168765114022,"Uniform Sample",43
+0.116324667232023,"Biased Sample",43
+0.0778367577041356,"Uniform Sample",44
+0.123890254075961,"Biased Sample",44
+0.074060714822815,"Uniform Sample",45
+0.123004274331647,"Biased Sample",45
+0.0773165492446315,"Uniform Sample",46
+0.12382415656599,"Biased Sample",46
+0.075111283329368,"Uniform Sample",47
+0.128371084904035,"Biased Sample",47
+0.0765291183975432,"Uniform Sample",48
+0.128700386399066,"Biased Sample",48
+0.0783162261450382,"Uniform Sample",49
+0.115051228471326,"Biased Sample",49
+0.0781858875099803,"Uniform Sample",50
+0.123727333641892,"Biased Sample",50
+0.0780645534496453,"Uniform Sample",51
+0.124411661690992,"Biased Sample",51
+0.0783273798117655,"Uniform Sample",52
+0.116822219782882,"Biased Sample",52
+0.0729201784612044,"Uniform Sample",53
+0.115078597163675,"Biased Sample",53
+0.0773609801757414,"Uniform Sample",54
+0.123960138902584,"Biased Sample",54
+0.0741614013416014,"Uniform Sample",55
+0.117300671924842,"Biased Sample",55
+0.0790907742939577,"Uniform Sample",56
+0.122710617048461,"Biased Sample",56
+0.0789257383700762,"Uniform Sample",57
+0.124518168037685,"Biased Sample",57
+0.0762466489370133,"Uniform Sample",58
+0.123077349860701,"Biased Sample",58
+0.073096483139378,"Uniform Sample",59
+0.126928169572965,"Biased Sample",59
+0.0802006702987876,"Uniform Sample",60
+0.119864115554109,"Biased Sample",60
+0.0776704487353188,"Uniform Sample",61
+0.12220913435213,"Biased Sample",61
+0.0756247250101467,"Uniform Sample",62
+0.121630847621011,"Biased Sample",62
+0.0758493799761277,"Uniform Sample",63
+0.12263711324731,"Biased Sample",63
+0.0760539627318544,"Uniform Sample",64
+0.123186625523986,"Biased Sample",64
+0.0770164059607063,"Uniform Sample",65
+0.122017706263688,"Biased Sample",65
+0.0766479989980699,"Uniform Sample",66
+0.129640626227116,"Biased Sample",66
+0.0781222411438655,"Uniform Sample",67
+0.121685650774449,"Biased Sample",67
+0.0784715918317652,"Uniform Sample",68
+0.12473340793154,"Biased Sample",68
+0.0773180144007515,"Uniform Sample",69
+0.115016849797705,"Biased Sample",69
+0.0720891851825931,"Uniform Sample",70
+0.110603840569583,"Biased Sample",70
+0.0750763532081728,"Uniform Sample",71
+0.127632250901848,"Biased Sample",71
+0.0777453568773664,"Uniform Sample",72
+0.115137594718963,"Biased Sample",72
+0.0807347748302272,"Uniform Sample",73
+0.126281309376271,"Biased Sample",73
+0.0764843732891282,"Uniform Sample",74
+0.121070814359945,"Biased Sample",74
+0.080250127343042,"Uniform Sample",75
+0.121183380758791,"Biased Sample",75
+0.0790865462073755,"Uniform Sample",76
+0.126025653876785,"Biased Sample",76
+0.0775809820701752,"Uniform Sample",77
+0.127855910359159,"Biased Sample",77
+0.0772955504169734,"Uniform Sample",78
+0.124710952516827,"Biased Sample",78
+0.0775702407171249,"Uniform Sample",79
+0.11893121330782,"Biased Sample",79
+0.0758311050613254,"Uniform Sample",80
+0.115854325663365,"Biased Sample",80
+0.0827482427636645,"Uniform Sample",81
+0.128332333261626,"Biased Sample",81
+0.0790546395287004,"Uniform Sample",82
+0.1221543005599,"Biased Sample",82
+0.0818211107641441,"Uniform Sample",83
+0.126363112043238,"Biased Sample",83
+0.0794910519286909,"Uniform Sample",84
+0.124713017948516,"Biased Sample",84
+0.0701305696781913,"Uniform Sample",85
+0.123687640995744,"Biased Sample",85
+0.0748704053242306,"Uniform Sample",86
+0.1251231300804,"Biased Sample",86
+0.0784309834069264,"Uniform Sample",87
+0.12400993083013,"Biased Sample",87
+0.0806027909436259,"Uniform Sample",88
+0.122544150212719,"Biased Sample",88
+0.0768249635003999,"Uniform Sample",89
+0.122164581515077,"Biased Sample",89
+0.0788182136244368,"Uniform Sample",90
+0.124811956271629,"Biased Sample",90
+0.0754809330443109,"Uniform Sample",91
+0.118793697992037,"Biased Sample",91
+0.070643940532983,"Uniform Sample",92
+0.122152463986953,"Biased Sample",92
+0.0759915997927371,"Uniform Sample",93
+0.122217027988213,"Biased Sample",93
+0.0764171772185884,"Uniform Sample",94
+0.118128610907245,"Biased Sample",94
+0.0786389921511912,"Uniform Sample",95
+0.1213787167512,"Biased Sample",95
+0.0765832812360451,"Uniform Sample",96
+0.124039693482215,"Biased Sample",96
+0.0789757890383161,"Uniform Sample",97
+0.120692710856802,"Biased Sample",97
+0.0779369541704791,"Uniform Sample",98
+0.12017058284521,"Biased Sample",98
+0.0773905169878358,"Uniform Sample",99
+0.118615465919698,"Biased Sample",99
+0.0775991980934711,"Uniform Sample",100
+0.114836714723136,"Biased Sample",100
+0.0711275627260177,"Uniform Sample",101
+0.127622767534594,"Biased Sample",101
+0.0793996335529254,"Uniform Sample",102
+0.122188593646347,"Biased Sample",102
+0.0778326486222722,"Uniform Sample",103
+0.123490304167024,"Biased Sample",103
+0.0754354900017667,"Uniform Sample",104
+0.126258702307471,"Biased Sample",104
+0.0789764825779512,"Uniform Sample",105
+0.127032884451038,"Biased Sample",105
+0.069838567765438,"Uniform Sample",106
+0.127312944746359,"Biased Sample",106
+0.0771618325722028,"Uniform Sample",107
+0.121373499266293,"Biased Sample",107
+0.0785684114751779,"Uniform Sample",108
+0.125441187487232,"Biased Sample",108
+0.071714115859248,"Uniform Sample",109
+0.121391934333364,"Biased Sample",109
+0.0804102259274556,"Uniform Sample",110
+0.119995748844357,"Biased Sample",110
+0.0766568694705875,"Uniform Sample",111
+0.118810444900901,"Biased Sample",111
+0.076476117996426,"Uniform Sample",112
+0.119526345160934,"Biased Sample",112
+0.0764505774922469,"Uniform Sample",113
+0.126895587517572,"Biased Sample",113
+0.0744671128368266,"Uniform Sample",114
+0.124159537197247,"Biased Sample",114
+0.0820015179437415,"Uniform Sample",115
+0.121124593121801,"Biased Sample",115
+0.0741441208646021,"Uniform Sample",116
+0.125637667281577,"Biased Sample",116
+0.0777839791323419,"Uniform Sample",117
+0.120387195594254,"Biased Sample",117
+0.0711586767337251,"Uniform Sample",118
+0.122728222750777,"Biased Sample",118
+0.0772744328271616,"Uniform Sample",119
+0.116021649585446,"Biased Sample",119
+0.0773512698061648,"Uniform Sample",120
+0.12700166700545,"Biased Sample",120
+0.0729180307786396,"Uniform Sample",121
+0.118916483116664,"Biased Sample",121
+0.076023380793916,"Uniform Sample",122
+0.122263186074491,"Biased Sample",122
+0.0767224195058019,"Uniform Sample",123
+0.117571614576087,"Biased Sample",123
+0.0759635259179164,"Uniform Sample",124
+0.117188109340176,"Biased Sample",124
+0.0792744302987122,"Uniform Sample",125
+0.126685227546507,"Biased Sample",125
+0.0775901235063581,"Uniform Sample",126
+0.115116560347535,"Biased Sample",126
+0.0802244381162776,"Uniform Sample",127
+0.127100002175245,"Biased Sample",127
+0.0748330711391864,"Uniform Sample",128
+0.125977361927948,"Biased Sample",128
+0.0745599051170928,"Uniform Sample",129
+0.117909373273739,"Biased Sample",129
+0.0782895533395308,"Uniform Sample",130
+0.118567444139413,"Biased Sample",130
+0.0813623959993671,"Uniform Sample",131
+0.127521328523859,"Biased Sample",131
+0.0746960993171228,"Uniform Sample",132
+0.122613192371243,"Biased Sample",132
+0.072017495907218,"Uniform Sample",133
+0.127672781346024,"Biased Sample",133
+0.076513305309923,"Uniform Sample",134
+0.119814943013247,"Biased Sample",134
+0.0739056276175707,"Uniform Sample",135
+0.132786265267304,"Biased Sample",135
+0.0739065965229054,"Uniform Sample",136
+0.117373432830405,"Biased Sample",136
+0.0735364377097791,"Uniform Sample",137
+0.120457639682693,"Biased Sample",137
+0.075396377047529,"Uniform Sample",138
+0.12344241478539,"Biased Sample",138
+0.0777968027829012,"Uniform Sample",139
+0.124541934245178,"Biased Sample",139
+0.077760462755256,"Uniform Sample",140
+0.127422648865438,"Biased Sample",140
+0.0787392402540771,"Uniform Sample",141
+0.127942195024816,"Biased Sample",141
+0.0777694949002199,"Uniform Sample",142
+0.12342254576765,"Biased Sample",142
+0.0778514225085028,"Uniform Sample",143
+0.125962372510507,"Biased Sample",143
+0.0771254461703958,"Uniform Sample",144
+0.125729162065031,"Biased Sample",144
+0.0751600915709785,"Uniform Sample",145
+0.122724896645207,"Biased Sample",145
+0.0768646515443618,"Uniform Sample",146
+0.124771342720425,"Biased Sample",146
+0.0792530210827916,"Uniform Sample",147
+0.122291584764933,"Biased Sample",147
+0.0815346139890451,"Uniform Sample",148
+0.126268528529929,"Biased Sample",148
+0.0778151384532596,"Uniform Sample",149
+0.127735735501073,"Biased Sample",149
+0.0792538873139946,"Uniform Sample",150
+0.12397377672936,"Biased Sample",150
+0.0734138364575467,"Uniform Sample",151
+0.12045154982998,"Biased Sample",151
+0.0748112767239857,"Uniform Sample",152
+0.122093406836079,"Biased Sample",152
+0.074337278744337,"Uniform Sample",153
+0.118597153513293,"Biased Sample",153
+0.0757279769497045,"Uniform Sample",154
+0.121846297093608,"Biased Sample",154
+0.0778766561060821,"Uniform Sample",155
+0.117367459533005,"Biased Sample",155
+0.0768579762223771,"Uniform Sample",156
+0.120099061638554,"Biased Sample",156
+0.0750656092465706,"Uniform Sample",157
+0.114527289419067,"Biased Sample",157
+0.0763456997635708,"Uniform Sample",158
+0.121841548097192,"Biased Sample",158
+0.0778562727881589,"Uniform Sample",159
+0.12428296882934,"Biased Sample",159
+0.0805807160506807,"Uniform Sample",160
+0.122225311204244,"Biased Sample",160
+0.0779285795117747,"Uniform Sample",161
+0.127488232228405,"Biased Sample",161
+0.0740307711452999,"Uniform Sample",162
+0.125501051815657,"Biased Sample",162
+0.0722053124473624,"Uniform Sample",163
+0.122917125110691,"Biased Sample",163
+0.0783207174386339,"Uniform Sample",164
+0.122951514767105,"Biased Sample",164
+0.0766808882513204,"Uniform Sample",165
+0.127622927099003,"Biased Sample",165
+0.0779676868474686,"Uniform Sample",166
+0.122574900077812,"Biased Sample",166
+0.0770817639905729,"Uniform Sample",167
+0.122640177176788,"Biased Sample",167
+0.0749237474829591,"Uniform Sample",168
+0.113624564183478,"Biased Sample",168
+0.0796412381352524,"Uniform Sample",169
+0.119751955635295,"Biased Sample",169
+0.0745473571060971,"Uniform Sample",170
+0.116843445609865,"Biased Sample",170
+0.0749361843837013,"Uniform Sample",171
+0.116565367245434,"Biased Sample",171
+0.0781146330538008,"Uniform Sample",172
+0.12129867319073,"Biased Sample",172
+0.0755297660597222,"Uniform Sample",173
+0.126967342666694,"Biased Sample",173
+0.0795128811086904,"Uniform Sample",174
+0.121456794760186,"Biased Sample",174
+0.0774364302165121,"Uniform Sample",175
+0.124221885796048,"Biased Sample",175
+0.0756181143979027,"Uniform Sample",176
+0.12001811613967,"Biased Sample",176
+0.0788918982203381,"Uniform Sample",177
+0.124006889413464,"Biased Sample",177
+0.0759009661991367,"Uniform Sample",178
+0.115660792627775,"Biased Sample",178
+0.0774808025056834,"Uniform Sample",179
+0.123942487774984,"Biased Sample",179
+0.0757147252350925,"Uniform Sample",180
+0.116674068849315,"Biased Sample",180
+0.0741477668030271,"Uniform Sample",181
+0.116190782945914,"Biased Sample",181
+0.0787084422007565,"Uniform Sample",182
+0.125885781443238,"Biased Sample",182
+0.0747512309685582,"Uniform Sample",183
+0.118850317019726,"Biased Sample",183
+0.0796823778328233,"Uniform Sample",184
+0.116382762190952,"Biased Sample",184
+0.074824146633645,"Uniform Sample",185
+0.129155293138066,"Biased Sample",185
+0.0792097453743497,"Uniform Sample",186
+0.123432542372183,"Biased Sample",186
+0.0774508169220432,"Uniform Sample",187
+0.125867233506777,"Biased Sample",187
+0.0768393412552325,"Uniform Sample",188
+0.124652559321507,"Biased Sample",188
+0.0745985491894951,"Uniform Sample",189
+0.134327808699095,"Biased Sample",189
+0.0764998629107216,"Uniform Sample",190
+0.12156847194229,"Biased Sample",190
+0.081406282025304,"Uniform Sample",191
+0.117389495360239,"Biased Sample",191
+0.0768649773740675,"Uniform Sample",192
+0.125260158101184,"Biased Sample",192
+0.0740556339811748,"Uniform Sample",193
+0.125846789480072,"Biased Sample",193
+0.0802928755981622,"Uniform Sample",194
+0.127224167858786,"Biased Sample",194
+0.0752756933759336,"Uniform Sample",195
+0.123861737677854,"Biased Sample",195
+0.0725231412891563,"Uniform Sample",196
+0.120224068216373,"Biased Sample",196
+0.0752552360233949,"Uniform Sample",197
+0.123502391068819,"Biased Sample",197
+0.0789211101262467,"Uniform Sample",198
+0.122009988870502,"Biased Sample",198
+0.0763753251241407,"Uniform Sample",199
+0.123646644311702,"Biased Sample",199
+0.0784227446237037,"Uniform Sample",200
+0.121757454881801,"Biased Sample",200
+0.0806446189863665,"Uniform Sample",201
+0.129511203045571,"Biased Sample",201
+0.0774823202571085,"Uniform Sample",202
+0.12281823343988,"Biased Sample",202
+0.0782037669781558,"Uniform Sample",203
+0.125893284966709,"Biased Sample",203
+0.0800310437205627,"Uniform Sample",204
+0.120588588597342,"Biased Sample",204
+0.08007018372995,"Uniform Sample",205
+0.118283635244913,"Biased Sample",205
+0.0807720534386807,"Uniform Sample",206
+0.119206183234937,"Biased Sample",206
+0.0804285508100267,"Uniform Sample",207
+0.119682781573233,"Biased Sample",207
+0.0767220425499975,"Uniform Sample",208
+0.123018603763943,"Biased Sample",208
+0.0737440178195027,"Uniform Sample",209
+0.125713847047795,"Biased Sample",209
+0.0821540203115151,"Uniform Sample",210
+0.125149365487688,"Biased Sample",210
+0.0726355224356189,"Uniform Sample",211
+0.116589001545336,"Biased Sample",211
+0.0821772894468498,"Uniform Sample",212
+0.11561112850664,"Biased Sample",212
+0.0765268124422293,"Uniform Sample",213
+0.11618105527193,"Biased Sample",213
+0.0748964199482077,"Uniform Sample",214
+0.123658427430038,"Biased Sample",214
+0.0801104720695323,"Uniform Sample",215
+0.125049256195775,"Biased Sample",215
+0.0709138982632331,"Uniform Sample",216
+0.113531489815186,"Biased Sample",216
+0.0804817192169291,"Uniform Sample",217
+0.126746224083966,"Biased Sample",217
+0.0768246561121902,"Uniform Sample",218
+0.118671898678606,"Biased Sample",218
+0.0816766282503964,"Uniform Sample",219
+0.122080423792596,"Biased Sample",219
+0.0751924392046253,"Uniform Sample",220
+0.126107604919921,"Biased Sample",220
+0.0827709648682501,"Uniform Sample",221
+0.123065336917363,"Biased Sample",221
+0.0777413429666578,"Uniform Sample",222
+0.127699658500557,"Biased Sample",222
+0.0756976422020009,"Uniform Sample",223
+0.12201392663081,"Biased Sample",223
+0.0762551628019967,"Uniform Sample",224
+0.118255645944734,"Biased Sample",224
+0.0801554405196047,"Uniform Sample",225
+0.130636539625056,"Biased Sample",225
+0.0772401970061835,"Uniform Sample",226
+0.12197883193751,"Biased Sample",226
+0.0716443455469879,"Uniform Sample",227
+0.123254288209577,"Biased Sample",227
+0.0764270832606667,"Uniform Sample",228
+0.127580525348761,"Biased Sample",228
+0.0829219693705697,"Uniform Sample",229
+0.131394597609102,"Biased Sample",229
+0.0720974869546337,"Uniform Sample",230
+0.123710850980991,"Biased Sample",230
+0.075672579625496,"Uniform Sample",231
+0.123065212827371,"Biased Sample",231
+0.0774825331578193,"Uniform Sample",232
+0.126275325052804,"Biased Sample",232
+0.0782666329753485,"Uniform Sample",233
+0.12216807789157,"Biased Sample",233
+0.0743182600374443,"Uniform Sample",234
+0.122439875180848,"Biased Sample",234
+0.0754471533180993,"Uniform Sample",235
+0.119658517399515,"Biased Sample",235
+0.0804425478624648,"Uniform Sample",236
+0.121176124162575,"Biased Sample",236
+0.077423377833204,"Uniform Sample",237
+0.125285618335416,"Biased Sample",237
+0.0795291107202958,"Uniform Sample",238
+0.121845107769136,"Biased Sample",238
+0.0807054525935303,"Uniform Sample",239
+0.12197598241583,"Biased Sample",239
+0.0748089379995097,"Uniform Sample",240
+0.117927467623409,"Biased Sample",240
+0.0727775465370898,"Uniform Sample",241
+0.120893095889302,"Biased Sample",241
+0.0800927716058833,"Uniform Sample",242
+0.130706163707702,"Biased Sample",242
+0.0730972996859241,"Uniform Sample",243
+0.115459115821204,"Biased Sample",243
+0.0756741826889653,"Uniform Sample",244
+0.119709681135888,"Biased Sample",244
+0.0778082821032567,"Uniform Sample",245
+0.121233511911005,"Biased Sample",245
+0.0771735452664018,"Uniform Sample",246
+0.125396929809012,"Biased Sample",246
+0.0742953256498883,"Uniform Sample",247
+0.126196036196968,"Biased Sample",247
+0.0798674342164989,"Uniform Sample",248
+0.127981458261345,"Biased Sample",248
+0.0737033846077814,"Uniform Sample",249
+0.120542061906837,"Biased Sample",249
+0.0773796770432132,"Uniform Sample",250
+0.121930364685127,"Biased Sample",250
+0.0734330679843575,"Uniform Sample",251
+0.120881556361313,"Biased Sample",251
+0.083816096973852,"Uniform Sample",252
+0.132099365001452,"Biased Sample",252
+0.078417488579094,"Uniform Sample",253
+0.125967413835256,"Biased Sample",253
+0.0735411988195599,"Uniform Sample",254
+0.123179015176947,"Biased Sample",254
+0.0768090714002777,"Uniform Sample",255
+0.1172189264361,"Biased Sample",255
+0.0782020954449377,"Uniform Sample",256
+0.119587469162744,"Biased Sample",256
+0.0787260745282881,"Uniform Sample",257
+0.122527463173156,"Biased Sample",257
+0.0765892586887195,"Uniform Sample",258
+0.120724842692954,"Biased Sample",258
+0.0759068550961752,"Uniform Sample",259
+0.126037628887886,"Biased Sample",259
+0.075802673029816,"Uniform Sample",260
+0.122176159924229,"Biased Sample",260
+0.0755886350377156,"Uniform Sample",261
+0.118483809020905,"Biased Sample",261
+0.0828674278412877,"Uniform Sample",262
+0.121575370039606,"Biased Sample",262
+0.0724426949017351,"Uniform Sample",263
+0.12345901543422,"Biased Sample",263
+0.073029069898543,"Uniform Sample",264
+0.124347812451545,"Biased Sample",264
+0.0781608935576969,"Uniform Sample",265
+0.124270419947492,"Biased Sample",265
+0.0770936249156071,"Uniform Sample",266
+0.124418517385684,"Biased Sample",266
+0.0728655190100578,"Uniform Sample",267
+0.118340933747143,"Biased Sample",267
+0.0782439452428651,"Uniform Sample",268
+0.12626742440342,"Biased Sample",268
+0.0800000133920921,"Uniform Sample",269
+0.115395717020054,"Biased Sample",269
+0.0801395298475967,"Uniform Sample",270
+0.118086774869534,"Biased Sample",270
+0.0759996948279238,"Uniform Sample",271
+0.119092182661929,"Biased Sample",271
+0.079249833476899,"Uniform Sample",272
+0.119393136193509,"Biased Sample",272
+0.076597669305436,"Uniform Sample",273
+0.122607051856815,"Biased Sample",273
+0.0738521019276198,"Uniform Sample",274
+0.125724977899229,"Biased Sample",274
+0.0771898997431862,"Uniform Sample",275
+0.115790960137829,"Biased Sample",275
+0.0800306072591275,"Uniform Sample",276
+0.120917366021554,"Biased Sample",276
+0.0765997864882769,"Uniform Sample",277
+0.117946020695886,"Biased Sample",277
+0.0750266230191266,"Uniform Sample",278
+0.132467499473876,"Biased Sample",278
+0.0771713921252445,"Uniform Sample",279
+0.121846301261635,"Biased Sample",279
+0.0793877786340403,"Uniform Sample",280
+0.125242747128692,"Biased Sample",280
+0.0730936981216648,"Uniform Sample",281
+0.121719991816644,"Biased Sample",281
+0.0776891756766213,"Uniform Sample",282
+0.12238218440508,"Biased Sample",282
+0.0749904876349681,"Uniform Sample",283
+0.118144315891044,"Biased Sample",283
+0.0823463556358684,"Uniform Sample",284
+0.123583716962702,"Biased Sample",284
+0.0802432040182668,"Uniform Sample",285
+0.125274148698599,"Biased Sample",285
+0.0788755838622359,"Uniform Sample",286
+0.122701918629306,"Biased Sample",286
+0.0779109733103367,"Uniform Sample",287
+0.12114471253353,"Biased Sample",287
+0.0799088624283958,"Uniform Sample",288
+0.124260966965371,"Biased Sample",288
+0.0739339169813077,"Uniform Sample",289
+0.115543369598963,"Biased Sample",289
+0.0789680842212583,"Uniform Sample",290
+0.120775971562245,"Biased Sample",290
+0.0753766433124711,"Uniform Sample",291
+0.124837589756553,"Biased Sample",291
+0.0783549651914254,"Uniform Sample",292
+0.123131338156572,"Biased Sample",292
+0.0796856338098705,"Uniform Sample",293
+0.123994374856786,"Biased Sample",293
+0.0798415171743534,"Uniform Sample",294
+0.126349465500635,"Biased Sample",294
+0.0783385351309954,"Uniform Sample",295
+0.12671243161913,"Biased Sample",295
+0.0739911175967724,"Uniform Sample",296
+0.121406389887215,"Biased Sample",296
+0.0824294764387976,"Uniform Sample",297
+0.121392805969147,"Biased Sample",297
+0.0795143843559118,"Uniform Sample",298
+0.11853099942956,"Biased Sample",298
+0.0745116978642196,"Uniform Sample",299
+0.123499857751386,"Biased Sample",299
+0.0750746074888718,"Uniform Sample",300
+0.122062814402501,"Biased Sample",300
+0.130728429540076,"Federov with Uniform Sample",1
+0.189953589700087,"Federov with Biased Sample",1
+0.131002430044654,"Federov with Uniform Sample",2
+0.192232009728244,"Federov with Biased Sample",2
+0.132154918795108,"Federov with Uniform Sample",3
+0.188391944343087,"Federov with Biased Sample",3
+0.130750549581313,"Federov with Uniform Sample",4
+0.191613046666544,"Federov with Biased Sample",4
+0.128496030889989,"Federov with Uniform Sample",5
+0.192871396780354,"Federov with Biased Sample",5
+0.13093589785193,"Federov with Uniform Sample",6
+0.194048783796547,"Federov with Biased Sample",6
+0.127988237025508,"Federov with Uniform Sample",7
+0.190939313088165,"Federov with Biased Sample",7
+0.133756577809667,"Federov with Uniform Sample",8
+0.19126919984681,"Federov with Biased Sample",8
+0.130394713263834,"Federov with Uniform Sample",9
+0.192223386707053,"Federov with Biased Sample",9
+0.132998824883416,"Federov with Uniform Sample",10
+0.18863932986935,"Federov with Biased Sample",10
+0.133304782865551,"Federov with Uniform Sample",11
+0.189205734082883,"Federov with Biased Sample",11
+0.128937367556303,"Federov with Uniform Sample",12
+0.189581269403601,"Federov with Biased Sample",12
+0.131188577085245,"Federov with Uniform Sample",13
+0.191955331448573,"Federov with Biased Sample",13
+0.130934784865302,"Federov with Uniform Sample",14
+0.192885279178233,"Federov with Biased Sample",14
+0.130518582871371,"Federov with Uniform Sample",15
+0.190731214599112,"Federov with Biased Sample",15
+0.127277391489888,"Federov with Uniform Sample",16
+0.190289670553792,"Federov with Biased Sample",16
+0.130752972033397,"Federov with Uniform Sample",17
+0.190129204791955,"Federov with Biased Sample",17
+0.130414046331913,"Federov with Uniform Sample",18
+0.188914027761256,"Federov with Biased Sample",18
+0.129018690919508,"Federov with Uniform Sample",19
+0.190563447034691,"Federov with Biased Sample",19
+0.130726770816611,"Federov with Uniform Sample",20
+0.192178340584977,"Federov with Biased Sample",20
+0.131175243751494,"Federov with Uniform Sample",21
+0.190186220895175,"Federov with Biased Sample",21
+0.129693514524399,"Federov with Uniform Sample",22
+0.192109952820404,"Federov with Biased Sample",22
+0.130248220065995,"Federov with Uniform Sample",23
+0.19216254659184,"Federov with Biased Sample",23
+0.130193407246305,"Federov with Uniform Sample",24
+0.19217197306103,"Federov with Biased Sample",24
+0.131158464519314,"Federov with Uniform Sample",25
+0.189874205215117,"Federov with Biased Sample",25
+0.128654209226091,"Federov with Uniform Sample",26
+0.18877327111454,"Federov with Biased Sample",26
+0.131283413445032,"Federov with Uniform Sample",27
+0.191414742533064,"Federov with Biased Sample",27
+0.130927363309595,"Federov with Uniform Sample",28
+0.191932612565689,"Federov with Biased Sample",28
+0.129711240782263,"Federov with Uniform Sample",29
+0.192968878277862,"Federov with Biased Sample",29
+0.133698353612185,"Federov with Uniform Sample",30
+0.189147988765955,"Federov with Biased Sample",30
+0.133343662313539,"Federov with Uniform Sample",31
+0.192336832179355,"Federov with Biased Sample",31
+0.127343379460227,"Federov with Uniform Sample",32
+0.193433165435507,"Federov with Biased Sample",32
+0.131410547268265,"Federov with Uniform Sample",33
+0.190798945008285,"Federov with Biased Sample",33
+0.131984246036831,"Federov with Uniform Sample",34
+0.190556546345315,"Federov with Biased Sample",34
+0.132439004616176,"Federov with Uniform Sample",35
+0.193626634697699,"Federov with Biased Sample",35
+0.130633290732768,"Federov with Uniform Sample",36
+0.189160253176626,"Federov with Biased Sample",36
+0.129180614649718,"Federov with Uniform Sample",37
+0.190168903000058,"Federov with Biased Sample",37
+0.130689295946044,"Federov with Uniform Sample",38
+0.193717483022417,"Federov with Biased Sample",38
+0.129416390664757,"Federov with Uniform Sample",39
+0.191496883590092,"Federov with Biased Sample",39
+0.131935298145249,"Federov with Uniform Sample",40
+0.193905583958006,"Federov with Biased Sample",40
+0.129998565647546,"Federov with Uniform Sample",41
+0.193558207918201,"Federov with Biased Sample",41
+0.129025586224459,"Federov with Uniform Sample",42
+0.188955103144179,"Federov with Biased Sample",42
+0.130738602674473,"Federov with Uniform Sample",43
+0.191212494593426,"Federov with Biased Sample",43
+0.130511250875743,"Federov with Uniform Sample",44
+0.196488385621906,"Federov with Biased Sample",44
+0.127468117091668,"Federov with Uniform Sample",45
+0.190411093763043,"Federov with Biased Sample",45
+0.131511341071279,"Federov with Uniform Sample",46
+0.190991499613049,"Federov with Biased Sample",46
+0.130753197672945,"Federov with Uniform Sample",47
+0.192854296292747,"Federov with Biased Sample",47
+0.131759480205367,"Federov with Uniform Sample",48
+0.190066098876001,"Federov with Biased Sample",48
+0.131458184535033,"Federov with Uniform Sample",49
+0.192054860680625,"Federov with Biased Sample",49
+0.132340589522535,"Federov with Uniform Sample",50
+0.192130840999692,"Federov with Biased Sample",50
+0.133779611583979,"Federov with Uniform Sample",51
+0.187499156349233,"Federov with Biased Sample",51
+0.133069621131952,"Federov with Uniform Sample",52
+0.188507905659445,"Federov with Biased Sample",52
+0.129575784348173,"Federov with Uniform Sample",53
+0.192645572262371,"Federov with Biased Sample",53
+0.132427309039059,"Federov with Uniform Sample",54
+0.188310700402853,"Federov with Biased Sample",54
+0.131325201026637,"Federov with Uniform Sample",55
+0.192294497360423,"Federov with Biased Sample",55
+0.13163935249183,"Federov with Uniform Sample",56
+0.191169622399721,"Federov with Biased Sample",56
+0.132538756972435,"Federov with Uniform Sample",57
+0.192723086933961,"Federov with Biased Sample",57
+0.129105038568909,"Federov with Uniform Sample",58
+0.190100151418888,"Federov with Biased Sample",58
+0.130283527514253,"Federov with Uniform Sample",59
+0.190674475586337,"Federov with Biased Sample",59
+0.131539451631344,"Federov with Uniform Sample",60
+0.191689993566346,"Federov with Biased Sample",60
+0.130382381771368,"Federov with Uniform Sample",61
+0.187513164241255,"Federov with Biased Sample",61
+0.133098699082383,"Federov with Uniform Sample",62
+0.190278985094052,"Federov with Biased Sample",62
+0.131581472162128,"Federov with Uniform Sample",63
+0.189950344288556,"Federov with Biased Sample",63
+0.131264461992064,"Federov with Uniform Sample",64
+0.188828626060381,"Federov with Biased Sample",64
+0.12815809501369,"Federov with Uniform Sample",65
+0.19415648576111,"Federov with Biased Sample",65
+0.129916057199286,"Federov with Uniform Sample",66
+0.189938742200645,"Federov with Biased Sample",66
+0.128149526353894,"Federov with Uniform Sample",67
+0.19055463877541,"Federov with Biased Sample",67
+0.1319925296199,"Federov with Uniform Sample",68
+0.191027357994513,"Federov with Biased Sample",68
+0.130029445324541,"Federov with Uniform Sample",69
+0.195553451729884,"Federov with Biased Sample",69
+0.131388641959425,"Federov with Uniform Sample",70
+0.189075485687872,"Federov with Biased Sample",70
+0.134196251502752,"Federov with Uniform Sample",71
+0.1898775868872,"Federov with Biased Sample",71
+0.129487054670238,"Federov with Uniform Sample",72
+0.18869061998506,"Federov with Biased Sample",72
+0.13147198556796,"Federov with Uniform Sample",73
+0.190791989554411,"Federov with Biased Sample",73
+0.129937785929142,"Federov with Uniform Sample",74
+0.189769222309328,"Federov with Biased Sample",74
+0.131373358537839,"Federov with Uniform Sample",75
+0.188408003724016,"Federov with Biased Sample",75
+0.1314190206244,"Federov with Uniform Sample",76
+0.189784918490105,"Federov with Biased Sample",76
+0.129241539953436,"Federov with Uniform Sample",77
+0.191220424554696,"Federov with Biased Sample",77
+0.13166141637123,"Federov with Uniform Sample",78
+0.187226347448599,"Federov with Biased Sample",78
+0.130519200216801,"Federov with Uniform Sample",79
+0.190912756938266,"Federov with Biased Sample",79
+0.128600696640781,"Federov with Uniform Sample",80
+0.187826051434507,"Federov with Biased Sample",80
+0.130701207058804,"Federov with Uniform Sample",81
+0.193321085058215,"Federov with Biased Sample",81
+0.129469033835344,"Federov with Uniform Sample",82
+0.192304630398001,"Federov with Biased Sample",82
+0.130828175003051,"Federov with Uniform Sample",83
+0.195077000597522,"Federov with Biased Sample",83
+0.127909801940155,"Federov with Uniform Sample",84
+0.195194660376369,"Federov with Biased Sample",84
+0.131494152170116,"Federov with Uniform Sample",85
+0.190129516731813,"Federov with Biased Sample",85
+0.127702920818844,"Federov with Uniform Sample",86
+0.191811541361428,"Federov with Biased Sample",86
+0.130711013111049,"Federov with Uniform Sample",87
+0.189999453345376,"Federov with Biased Sample",87
+0.130557498066938,"Federov with Uniform Sample",88
+0.191440739942817,"Federov with Biased Sample",88
+0.132602390062925,"Federov with Uniform Sample",89
+0.190702183768715,"Federov with Biased Sample",89
+0.133844159942359,"Federov with Uniform Sample",90
+0.190307096223514,"Federov with Biased Sample",90
+0.132610637223681,"Federov with Uniform Sample",91
+0.193905264950856,"Federov with Biased Sample",91
+0.1320031292587,"Federov with Uniform Sample",92
+0.190169280222744,"Federov with Biased Sample",92
+0.134561335793432,"Federov with Uniform Sample",93
+0.188117367539077,"Federov with Biased Sample",93
+0.129691333174297,"Federov with Uniform Sample",94
+0.189697846837749,"Federov with Biased Sample",94
+0.130465898418372,"Federov with Uniform Sample",95
+0.190237527890167,"Federov with Biased Sample",95
+0.131932135986794,"Federov with Uniform Sample",96
+0.19047248769695,"Federov with Biased Sample",96
+0.130562138608891,"Federov with Uniform Sample",97
+0.187613658544567,"Federov with Biased Sample",97
+0.132703729461596,"Federov with Uniform Sample",98
+0.191020581160973,"Federov with Biased Sample",98
+0.131413471366754,"Federov with Uniform Sample",99
+0.191120938247917,"Federov with Biased Sample",99
+0.130485628454969,"Federov with Uniform Sample",100
+0.19234457183838,"Federov with Biased Sample",100
+0.129606212624624,"Federov with Uniform Sample",101
+0.190947938996685,"Federov with Biased Sample",101
+0.130352073667838,"Federov with Uniform Sample",102
+0.19451985508649,"Federov with Biased Sample",102
+0.128670547850069,"Federov with Uniform Sample",103
+0.192939202017325,"Federov with Biased Sample",103
+0.130560831159693,"Federov with Uniform Sample",104
+0.192347982565969,"Federov with Biased Sample",104
+0.134315659611587,"Federov with Uniform Sample",105
+0.194326440748701,"Federov with Biased Sample",105
+0.13352988528298,"Federov with Uniform Sample",106
+0.19192808507229,"Federov with Biased Sample",106
+0.129610246364316,"Federov with Uniform Sample",107
+0.189897989101068,"Federov with Biased Sample",107
+0.129198506269347,"Federov with Uniform Sample",108
+0.193278896685066,"Federov with Biased Sample",108
+0.128996687113449,"Federov with Uniform Sample",109
+0.193446272386235,"Federov with Biased Sample",109
+0.13174597226648,"Federov with Uniform Sample",110
+0.193681651826543,"Federov with Biased Sample",110
+0.130372762033951,"Federov with Uniform Sample",111
+0.192525712996731,"Federov with Biased Sample",111
+0.130753411780119,"Federov with Uniform Sample",112
+0.193632800783266,"Federov with Biased Sample",112
+0.132941559428431,"Federov with Uniform Sample",113
+0.189029754997,"Federov with Biased Sample",113
+0.133086741001304,"Federov with Uniform Sample",114
+0.189409649767181,"Federov with Biased Sample",114
+0.127904695333001,"Federov with Uniform Sample",115
+0.192061395706476,"Federov with Biased Sample",115
+0.131378681423338,"Federov with Uniform Sample",116
+0.191368971702544,"Federov with Biased Sample",116
+0.131852857295041,"Federov with Uniform Sample",117
+0.191231746649448,"Federov with Biased Sample",117
+0.128010899558854,"Federov with Uniform Sample",118
+0.189421947635483,"Federov with Biased Sample",118
+0.130923584815392,"Federov with Uniform Sample",119
+0.192299833075244,"Federov with Biased Sample",119
+0.131057708348602,"Federov with Uniform Sample",120
+0.192433492921305,"Federov with Biased Sample",120
+0.134709174198451,"Federov with Uniform Sample",121
+0.191788446579525,"Federov with Biased Sample",121
+0.130257473081985,"Federov with Uniform Sample",122
+0.187839773129315,"Federov with Biased Sample",122
+0.131855610820581,"Federov with Uniform Sample",123
+0.189647334455826,"Federov with Biased Sample",123
+0.128465925528458,"Federov with Uniform Sample",124
+0.191053067865559,"Federov with Biased Sample",124
+0.131286773063971,"Federov with Uniform Sample",125
+0.191671462952534,"Federov with Biased Sample",125
+0.130910834349729,"Federov with Uniform Sample",126
+0.189903436139938,"Federov with Biased Sample",126
+0.129521274974949,"Federov with Uniform Sample",127
+0.192497796878936,"Federov with Biased Sample",127
+0.13391604197064,"Federov with Uniform Sample",128
+0.18972243237538,"Federov with Biased Sample",128
+0.133258968891227,"Federov with Uniform Sample",129
+0.192750964151574,"Federov with Biased Sample",129
+0.127514131320413,"Federov with Uniform Sample",130
+0.192559298951602,"Federov with Biased Sample",130
+0.129760670972262,"Federov with Uniform Sample",131
+0.188874738100599,"Federov with Biased Sample",131
+0.132685120428606,"Federov with Uniform Sample",132
+0.189585081521762,"Federov with Biased Sample",132
+0.128457894856575,"Federov with Uniform Sample",133
+0.188441185195842,"Federov with Biased Sample",133
+0.131370733589629,"Federov with Uniform Sample",134
+0.192118968354638,"Federov with Biased Sample",134
+0.129931455418446,"Federov with Uniform Sample",135
+0.190283828930993,"Federov with Biased Sample",135
+0.130380299541402,"Federov with Uniform Sample",136
+0.192960815225037,"Federov with Biased Sample",136
+0.130492321728463,"Federov with Uniform Sample",137
+0.193237091223468,"Federov with Biased Sample",137
+0.132276589310049,"Federov with Uniform Sample",138
+0.191310056666279,"Federov with Biased Sample",138
+0.132244983672769,"Federov with Uniform Sample",139
+0.189664378025864,"Federov with Biased Sample",139
+0.130419782553289,"Federov with Uniform Sample",140
+0.190005028196225,"Federov with Biased Sample",140
+0.132668073506342,"Federov with Uniform Sample",141
+0.188770883785775,"Federov with Biased Sample",141
+0.130420882069132,"Federov with Uniform Sample",142
+0.192075785329163,"Federov with Biased Sample",142
+0.126868354818331,"Federov with Uniform Sample",143
+0.190644030550038,"Federov with Biased Sample",143
+0.130076145391333,"Federov with Uniform Sample",144
+0.190812237419019,"Federov with Biased Sample",144
+0.131154628080321,"Federov with Uniform Sample",145
+0.18901306329926,"Federov with Biased Sample",145
+0.129559155007508,"Federov with Uniform Sample",146
+0.187225787187865,"Federov with Biased Sample",146
+0.131294392545704,"Federov with Uniform Sample",147
+0.190260158160024,"Federov with Biased Sample",147
+0.129867289103583,"Federov with Uniform Sample",148
+0.192176968048617,"Federov with Biased Sample",148
+0.128801083836749,"Federov with Uniform Sample",149
+0.189144296838685,"Federov with Biased Sample",149
+0.132860094241913,"Federov with Uniform Sample",150
+0.192173648970168,"Federov with Biased Sample",150
+0.13071417451736,"Federov with Uniform Sample",151
+0.19027168145455,"Federov with Biased Sample",151
+0.133385859174086,"Federov with Uniform Sample",152
+0.191449486670691,"Federov with Biased Sample",152
+0.127770327304325,"Federov with Uniform Sample",153
+0.189176525025556,"Federov with Biased Sample",153
+0.130058539855907,"Federov with Uniform Sample",154
+0.188080670135775,"Federov with Biased Sample",154
+0.132235508436497,"Federov with Uniform Sample",155
+0.190722719089094,"Federov with Biased Sample",155
+0.130170000044664,"Federov with Uniform Sample",156
+0.189665632173969,"Federov with Biased Sample",156
+0.129315873002915,"Federov with Uniform Sample",157
+0.190262645371274,"Federov with Biased Sample",157
+0.133434501031921,"Federov with Uniform Sample",158
+0.193284951516712,"Federov with Biased Sample",158
+0.133242961129759,"Federov with Uniform Sample",159
+0.192113994179487,"Federov with Biased Sample",159
+0.130192886386983,"Federov with Uniform Sample",160
+0.189996474582561,"Federov with Biased Sample",160
+0.132357473520414,"Federov with Uniform Sample",161
+0.19295045377342,"Federov with Biased Sample",161
+0.130712053774884,"Federov with Uniform Sample",162
+0.190048808860103,"Federov with Biased Sample",162
+0.133873373496664,"Federov with Uniform Sample",163
+0.193477989198813,"Federov with Biased Sample",163
+0.132357859131701,"Federov with Uniform Sample",164
+0.193156979061797,"Federov with Biased Sample",164
+0.129866676605595,"Federov with Uniform Sample",165
+0.19134419823312,"Federov with Biased Sample",165
+0.130281014102363,"Federov with Uniform Sample",166
+0.18611688511965,"Federov with Biased Sample",166
+0.132060669984826,"Federov with Uniform Sample",167
+0.190770514541954,"Federov with Biased Sample",167
+0.128082562397567,"Federov with Uniform Sample",168
+0.190354388540687,"Federov with Biased Sample",168
+0.130480156010204,"Federov with Uniform Sample",169
+0.189021931718767,"Federov with Biased Sample",169
+0.133841055250057,"Federov with Uniform Sample",170
+0.189944635115053,"Federov with Biased Sample",170
+0.133574483082155,"Federov with Uniform Sample",171
+0.191937981525413,"Federov with Biased Sample",171
+0.133557362706841,"Federov with Uniform Sample",172
+0.193113224267019,"Federov with Biased Sample",172
+0.129204987823467,"Federov with Uniform Sample",173
+0.191527572448624,"Federov with Biased Sample",173
+0.133321017869465,"Federov with Uniform Sample",174
+0.191918456755899,"Federov with Biased Sample",174
+0.130182741118695,"Federov with Uniform Sample",175
+0.189380463206323,"Federov with Biased Sample",175
+0.129649292369581,"Federov with Uniform Sample",176
+0.191220164598623,"Federov with Biased Sample",176
+0.12932086890524,"Federov with Uniform Sample",177
+0.192435776762838,"Federov with Biased Sample",177
+0.132228904357259,"Federov with Uniform Sample",178
+0.188977389735297,"Federov with Biased Sample",178
+0.131929244656388,"Federov with Uniform Sample",179
+0.190552584415105,"Federov with Biased Sample",179
+0.133245587245369,"Federov with Uniform Sample",180
+0.192470445447446,"Federov with Biased Sample",180
+0.131328384626994,"Federov with Uniform Sample",181
+0.191537905383593,"Federov with Biased Sample",181
+0.129328245447289,"Federov with Uniform Sample",182
+0.189486644531455,"Federov with Biased Sample",182
+0.133695399373967,"Federov with Uniform Sample",183
+0.190914135618205,"Federov with Biased Sample",183
+0.131153793197199,"Federov with Uniform Sample",184
+0.191891811625578,"Federov with Biased Sample",184
+0.131224087188301,"Federov with Uniform Sample",185
+0.19305635515586,"Federov with Biased Sample",185
+0.130690826471365,"Federov with Uniform Sample",186
+0.191231480502626,"Federov with Biased Sample",186
+0.130330108856624,"Federov with Uniform Sample",187
+0.189638611783875,"Federov with Biased Sample",187
+0.128422287171332,"Federov with Uniform Sample",188
+0.189625492290624,"Federov with Biased Sample",188
+0.132657821023925,"Federov with Uniform Sample",189
+0.192123344007583,"Federov with Biased Sample",189
+0.128990614080309,"Federov with Uniform Sample",190
+0.192383523530697,"Federov with Biased Sample",190
+0.134287020678213,"Federov with Uniform Sample",191
+0.192306858832938,"Federov with Biased Sample",191
+0.130761689882056,"Federov with Uniform Sample",192
+0.189147008407399,"Federov with Biased Sample",192
+0.132100595250962,"Federov with Uniform Sample",193
+0.190704407837203,"Federov with Biased Sample",193
+0.132299432270391,"Federov with Uniform Sample",194
+0.190143841916551,"Federov with Biased Sample",194
+0.130781781603475,"Federov with Uniform Sample",195
+0.191699752076763,"Federov with Biased Sample",195
+0.129920032966413,"Federov with Uniform Sample",196
+0.192342939000683,"Federov with Biased Sample",196
+0.132019396839634,"Federov with Uniform Sample",197
+0.191252507559422,"Federov with Biased Sample",197
+0.129452837694057,"Federov with Uniform Sample",198
+0.191287990473984,"Federov with Biased Sample",198
+0.130906806455506,"Federov with Uniform Sample",199
+0.193877063828221,"Federov with Biased Sample",199
+0.130216113122307,"Federov with Uniform Sample",200
+0.193238100791027,"Federov with Biased Sample",200
+0.128340278235914,"Federov with Uniform Sample",201
+0.18971753090808,"Federov with Biased Sample",201
+0.129523594789004,"Federov with Uniform Sample",202
+0.190445108131635,"Federov with Biased Sample",202
+0.128359599201815,"Federov with Uniform Sample",203
+0.196886371645053,"Federov with Biased Sample",203
+0.130192782340149,"Federov with Uniform Sample",204
+0.190421642369793,"Federov with Biased Sample",204
+0.133842160542026,"Federov with Uniform Sample",205
+0.19144515942281,"Federov with Biased Sample",205
+0.129607061412512,"Federov with Uniform Sample",206
+0.190526884817348,"Federov with Biased Sample",206
+0.129454881132117,"Federov with Uniform Sample",207
+0.189282630980562,"Federov with Biased Sample",207
+0.129109395931164,"Federov with Uniform Sample",208
+0.192878494319392,"Federov with Biased Sample",208
+0.132374217102815,"Federov with Uniform Sample",209
+0.193474885487375,"Federov with Biased Sample",209
+0.129170393559081,"Federov with Uniform Sample",210
+0.189134936826423,"Federov with Biased Sample",210
+0.12913054077905,"Federov with Uniform Sample",211
+0.194182782142522,"Federov with Biased Sample",211
+0.130805043978222,"Federov with Uniform Sample",212
+0.19427006776078,"Federov with Biased Sample",212
+0.132491291914661,"Federov with Uniform Sample",213
+0.192067855848364,"Federov with Biased Sample",213
+0.13221278853251,"Federov with Uniform Sample",214
+0.192443267240377,"Federov with Biased Sample",214
+0.134694906480377,"Federov with Uniform Sample",215
+0.191100039332601,"Federov with Biased Sample",215
+0.132121471839087,"Federov with Uniform Sample",216
+0.192017188477554,"Federov with Biased Sample",216
+0.129890907713749,"Federov with Uniform Sample",217
+0.195583485260995,"Federov with Biased Sample",217
+0.129979667340801,"Federov with Uniform Sample",218
+0.192958800162389,"Federov with Biased Sample",218
+0.12921563256426,"Federov with Uniform Sample",219
+0.18999426772955,"Federov with Biased Sample",219
+0.130640156046047,"Federov with Uniform Sample",220
+0.193510605223581,"Federov with Biased Sample",220
+0.128982144922147,"Federov with Uniform Sample",221
+0.1923608880757,"Federov with Biased Sample",221
+0.130889627532039,"Federov with Uniform Sample",222
+0.196395999277659,"Federov with Biased Sample",222
+0.133168054357026,"Federov with Uniform Sample",223
+0.190493177511094,"Federov with Biased Sample",223
+0.130899566441699,"Federov with Uniform Sample",224
+0.190839118471288,"Federov with Biased Sample",224
+0.131408732085882,"Federov with Uniform Sample",225
+0.189837168279053,"Federov with Biased Sample",225
+0.12986998992814,"Federov with Uniform Sample",226
+0.190206642687148,"Federov with Biased Sample",226
+0.129255381491924,"Federov with Uniform Sample",227
+0.188783174545991,"Federov with Biased Sample",227
+0.131889891790446,"Federov with Uniform Sample",228
+0.192931517438184,"Federov with Biased Sample",228
+0.133732916202423,"Federov with Uniform Sample",229
+0.190373655109514,"Federov with Biased Sample",229
+0.132297186351288,"Federov with Uniform Sample",230
+0.187466402637381,"Federov with Biased Sample",230
+0.131458931307193,"Federov with Uniform Sample",231
+0.189242935599852,"Federov with Biased Sample",231
+0.131444661982836,"Federov with Uniform Sample",232
+0.195736323359368,"Federov with Biased Sample",232
+0.129705318075345,"Federov with Uniform Sample",233
+0.194044678464615,"Federov with Biased Sample",233
+0.128807112117566,"Federov with Uniform Sample",234
+0.191071066908562,"Federov with Biased Sample",234
+0.132409679970733,"Federov with Uniform Sample",235
+0.189373519434876,"Federov with Biased Sample",235
+0.129753439694597,"Federov with Uniform Sample",236
+0.18958122355869,"Federov with Biased Sample",236
+0.129768659286803,"Federov with Uniform Sample",237
+0.190132240800445,"Federov with Biased Sample",237
+0.128796730414794,"Federov with Uniform Sample",238
+0.190434831973409,"Federov with Biased Sample",238
+0.131267315357194,"Federov with Uniform Sample",239
+0.190436159371663,"Federov with Biased Sample",239
+0.131508473407791,"Federov with Uniform Sample",240
+0.191227174635763,"Federov with Biased Sample",240
+0.131006026514253,"Federov with Uniform Sample",241
+0.189047226784041,"Federov with Biased Sample",241
+0.129261991840209,"Federov with Uniform Sample",242
+0.194036945430899,"Federov with Biased Sample",242
+0.129813428796132,"Federov with Uniform Sample",243
+0.190994832633812,"Federov with Biased Sample",243
+0.133442036355403,"Federov with Uniform Sample",244
+0.191860667039488,"Federov with Biased Sample",244
+0.132891068427302,"Federov with Uniform Sample",245
+0.193258246213625,"Federov with Biased Sample",245
+0.13266522490662,"Federov with Uniform Sample",246
+0.191490300245714,"Federov with Biased Sample",246
+0.131517130538455,"Federov with Uniform Sample",247
+0.189985443765198,"Federov with Biased Sample",247
+0.129834396319211,"Federov with Uniform Sample",248
+0.190558381638974,"Federov with Biased Sample",248
+0.129958701259739,"Federov with Uniform Sample",249
+0.197922358182236,"Federov with Biased Sample",249
+0.130424618548923,"Federov with Uniform Sample",250
+0.192914432659182,"Federov with Biased Sample",250
+0.132007698744985,"Federov with Uniform Sample",251
+0.196325385469784,"Federov with Biased Sample",251
+0.128759846886351,"Federov with Uniform Sample",252
+0.191098438656492,"Federov with Biased Sample",252
+0.132701210330669,"Federov with Uniform Sample",253
+0.191640550760131,"Federov with Biased Sample",253
+0.132003784023137,"Federov with Uniform Sample",254
+0.191627314231029,"Federov with Biased Sample",254
+0.13584489576754,"Federov with Uniform Sample",255
+0.188513458412963,"Federov with Biased Sample",255
+0.133211654223674,"Federov with Uniform Sample",256
+0.192044999233569,"Federov with Biased Sample",256
+0.132079859961159,"Federov with Uniform Sample",257
+0.194172166576708,"Federov with Biased Sample",257
+0.130662178434746,"Federov with Uniform Sample",258
+0.191972989438474,"Federov with Biased Sample",258
+0.134043130813512,"Federov with Uniform Sample",259
+0.190255578010856,"Federov with Biased Sample",259
+0.130551504879144,"Federov with Uniform Sample",260
+0.188363168527314,"Federov with Biased Sample",260
+0.128908151220961,"Federov with Uniform Sample",261
+0.196292970462339,"Federov with Biased Sample",261
+0.133435131903273,"Federov with Uniform Sample",262
+0.190328116328906,"Federov with Biased Sample",262
+0.133808366189878,"Federov with Uniform Sample",263
+0.192230827968948,"Federov with Biased Sample",263
+0.131340591658901,"Federov with Uniform Sample",264
+0.193203707916314,"Federov with Biased Sample",264
+0.131654878881748,"Federov with Uniform Sample",265
+0.195534971447861,"Federov with Biased Sample",265
+0.132108922337315,"Federov with Uniform Sample",266
+0.193042465390408,"Federov with Biased Sample",266
+0.128736290188172,"Federov with Uniform Sample",267
+0.189397891993867,"Federov with Biased Sample",267
+0.129952860512946,"Federov with Uniform Sample",268
+0.191453299069641,"Federov with Biased Sample",268
+0.131680995102881,"Federov with Uniform Sample",269
+0.189608704537626,"Federov with Biased Sample",269
+0.129747478307282,"Federov with Uniform Sample",270
+0.19258027311177,"Federov with Biased Sample",270
+0.127755243199859,"Federov with Uniform Sample",271
+0.191502798071941,"Federov with Biased Sample",271
+0.133847546069073,"Federov with Uniform Sample",272
+0.190186598871626,"Federov with Biased Sample",272
+0.13344833341874,"Federov with Uniform Sample",273
+0.193058979062027,"Federov with Biased Sample",273
+0.131366565274001,"Federov with Uniform Sample",274
+0.189045345759497,"Federov with Biased Sample",274
+0.131303555146976,"Federov with Uniform Sample",275
+0.188181777460849,"Federov with Biased Sample",275
+0.131923193310552,"Federov with Uniform Sample",276
+0.190792993060942,"Federov with Biased Sample",276
+0.129761400730472,"Federov with Uniform Sample",277
+0.189630945174136,"Federov with Biased Sample",277
+0.128927997366268,"Federov with Uniform Sample",278
+0.18908024226285,"Federov with Biased Sample",278
+0.129713097382235,"Federov with Uniform Sample",279
+0.189964880756448,"Federov with Biased Sample",279
+0.129060477169136,"Federov with Uniform Sample",280
+0.192594399500421,"Federov with Biased Sample",280
+0.135088405050812,"Federov with Uniform Sample",281
+0.191379773036407,"Federov with Biased Sample",281
+0.131441972724398,"Federov with Uniform Sample",282
+0.192830643908349,"Federov with Biased Sample",282
+0.133098740879525,"Federov with Uniform Sample",283
+0.191177168431399,"Federov with Biased Sample",283
+0.129432655280656,"Federov with Uniform Sample",284
+0.19135541172501,"Federov with Biased Sample",284
+0.131114232369862,"Federov with Uniform Sample",285
+0.19510488440534,"Federov with Biased Sample",285
+0.130876808383046,"Federov with Uniform Sample",286
+0.189576192676413,"Federov with Biased Sample",286
+0.130498886973627,"Federov with Uniform Sample",287
+0.190063846520576,"Federov with Biased Sample",287
+0.129468020816228,"Federov with Uniform Sample",288
+0.192603615308348,"Federov with Biased Sample",288
+0.132718328737398,"Federov with Uniform Sample",289
+0.192086915385291,"Federov with Biased Sample",289
+0.130046672683316,"Federov with Uniform Sample",290
+0.189060806095943,"Federov with Biased Sample",290
+0.135305985689721,"Federov with Uniform Sample",291
+0.191987970185872,"Federov with Biased Sample",291
+0.130739145181749,"Federov with Uniform Sample",292
+0.187915321727143,"Federov with Biased Sample",292
+0.132840289575582,"Federov with Uniform Sample",293
+0.193970142356369,"Federov with Biased Sample",293
+0.133696857827256,"Federov with Uniform Sample",294
+0.191330402634624,"Federov with Biased Sample",294
+0.131733799513236,"Federov with Uniform Sample",295
+0.192240279187855,"Federov with Biased Sample",295
+0.131591771191886,"Federov with Uniform Sample",296
+0.190261648048903,"Federov with Biased Sample",296
+0.130829239088451,"Federov with Uniform Sample",297
+0.190374682399599,"Federov with Biased Sample",297
+0.129794229626299,"Federov with Uniform Sample",298
+0.192307055836203,"Federov with Biased Sample",298
+0.13033705955325,"Federov with Uniform Sample",299
+0.192064014300405,"Federov with Biased Sample",299
+0.129479682692229,"Federov with Uniform Sample",300
+0.190518949315049,"Federov with Biased Sample",300
