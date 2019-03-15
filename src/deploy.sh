@@ -1,6 +1,6 @@
 #! /bin/bash
 
-JOB_SCRIPT="/home/pbruel/dopt_sampling_tests/run.sh"
+JOB_SCRIPT="/home/pbruel/dopt_sampling_tests/src/run.sh"
 
 echo "Deploying orio_experiments image"
 
