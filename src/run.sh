@@ -16,7 +16,6 @@ fi
 
 USR="pbruel"
 USR_TARGET="/home/${USR}/dopt_sampling_tests/data/results/"
-NODE_NAME="xeon_e5_2630_v3_$(uname -n | cut -d. -f1)"
 
 APP_TARGET="/root/dopt_sampling_tests/src/"
 cd $APP_TARGET
@@ -29,7 +28,7 @@ Rscript run_experiments.r
 
 echo "Copying files to main machine"
 
-NODE_NAME="xeon_e5_2630_v3_$(uname -n | cut -d. -f1)_$(date +%s)"
+NODE_NAME="$(uname -n | cut -d. -f1)_$(date +%s)"
 
 mkdir -p $NODE_NAME
 mv $OUTPUT_FILE $NODE_NAME
