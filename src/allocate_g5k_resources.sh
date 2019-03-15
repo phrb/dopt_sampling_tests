@@ -1,6 +1,6 @@
 #! /bin/bash
 
-CLONE_TARGET="/home/pbruel/dopt_sampling_experiments"
+CLONE_TARGET="/home/pbruel/dopt_sampling_tests"
 
 echo "Testing connectivity to GitHub"
 ssh -T git@github.com
@@ -10,7 +10,7 @@ echo "Updating target data directory"
 if [ -d "$CLONE_TARGET" ]; then
     git -C ${CLONE_TARGET} pull
 else
-    git clone git@github.com:phrb/dopt_sampling_experiments.git ${CLONE_TARGET}
+    git clone git@github.com:phrb/dopt_sampling_tests.git ${CLONE_TARGET}
 fi
 
 echo "Allocating machines"
