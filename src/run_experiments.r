@@ -499,7 +499,7 @@ run_experiments <- function() {
 
     data <- NULL
 
-    runs <- 10
+    runs <- 5
     factors <- 60
 
     federov_samples <- 1000
