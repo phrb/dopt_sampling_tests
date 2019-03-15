@@ -21,12 +21,19 @@ NODE_NAME="xeon_e5_2630_v3_$(uname -n | cut -d. -f1)"
 APP_TARGET="/root/dopt_sampling_tests/src/"
 cd $APP_TARGET
 
+OUTPUT_FILE="experiments.csv"
+
+echo "Starting script run"
+
 Rscript run_experiments.r
+
+echo "Copying files to main machine"
 
 NODE_NAME="xeon_e5_2630_v3_$(uname -n | cut -d. -f1)_$(date +%s)"
 
 mkdir -p $NODE_NAME
-mv ${APP_TARGET}/${NODE_NAME}_* /tmp/
+mv $OUTPUT_FILE $NODE_NAME
+mv ${APP_TARGET}/${NODE_NAME} /tmp/
 
 su ${USR} -c "mkdir -p ${USR_TARGET}"
-su ${USR} -c "mv /tmp/${NODE_NAME}_* ${USR_TARGET}"
+su ${USR} -c "mv /tmp/${NODE_NAME} ${USR_TARGET}"
