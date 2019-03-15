@@ -131,11 +131,62 @@ compare_coefficients <- function(coefficients, formula, design) {
     return(sqrt(sum((coefficients - unname(coef(lm(formula, design)))) ^ 2)))
 }
 
+count_post_anova_coefficient_errors <- function(coefficients,
+                                                coefficient_limits,
+                                                formula,
+                                                design_a,
+                                                design_b,
+                                                prf_threshold) {
+    regression_summary_a <- summary(aov(formula, design_a))
+
+    prf_values_a <- as.data.frame(regression_summary_a[[1]])["Pr(>F)"]
+    names(prf_values_a) <- c("values")
+
+    if(nrow(subset(prf_values_a, values <= prf_threshold)) > 0) {
+      refitted_formula_a <- formula(paste("Y ~", paste(rownames(subset(prf_values_a, values <= prf_threshold)), sep = "", collapse = " + ")))
+    } else {
+      refitted_formula_a <- formula
+    }
+
+    regression_summary_b <- summary(aov(formula, design_b))
+
+    prf_values_b <- as.data.frame(regression_summary_b[[1]])["Pr(>F)"]
+    names(prf_values_b) <- c("values")
+
+    if(nrow(subset(prf_values_b, values <= prf_threshold)) > 0) {
+      refitted_formula_b <- formula(paste("Y ~", paste(rownames(subset(prf_values_b, values <= prf_threshold)), sep = "", collapse = " + ")))
+    } else {
+      refitted_formula_b <- formula
+    }
+
+    named_coefficients <- data.frame(t(coefficients))
+    names(named_coefficients) <- names(coef(lm(formula, design_a)))
+
+    named_refitted_coefficients_a <- data.frame(t(coef(lm(refitted_formula_a, design_a))))
+    names(named_refitted_coefficients_a) <- names(coef(lm(refitted_formula_a, design_a)))
+
+    named_refitted_coefficients_b <- data.frame(t(coef(lm(refitted_formula_b, design_b))))
+    names(named_refitted_coefficients_b) <- names(coef(lm(refitted_formula_b, design_b)))
+
+    coefficient_data <- bind_rows(named_coefficients,
+                                  named_refitted_coefficients_a,
+                                  named_refitted_coefficients_b)
+
+    return(list(false_negatives = c(sum(is.na(coefficient_data[2, abs(coefficient_data[1, ]) > coefficient_limits$min])),
+                                    sum(is.na(coefficient_data[3, abs(coefficient_data[1, ]) > coefficient_limits$min]))
+                                    ),
+                false_positives = c(sum(!is.na(coefficient_data[2, abs(coefficient_data[1, ]) < coefficient_limits$min])),
+                                    sum(!is.na(coefficient_data[3, abs(coefficient_data[1, ]) < coefficient_limits$min]))
+                                    )
+                )
+           )
+}
+
 compare_post_anova_coefficients <- function(coefficients,
                                             formula,
                                             design_a,
                                             design_b,
-                                            prf_threshold = 0.0001) {
+                                            prf_threshold) {
     regression_summary_a <- summary(aov(formula, design_a))
 
     prf_values_a <- as.data.frame(regression_summary_a[[1]])["Pr(>F)"]
@@ -255,6 +306,14 @@ linear_experiment <- function(coefficient_number,
                                                                          biased_federov_design,
                                                                          prf_threshold = prf_threshold)
 
+
+            coefficient_errors = count_post_anova_coefficient_errors(coefficients,
+                                                                     coefficient_variability,
+                                                                     response_formula,
+                                                                     federov_design,
+                                                                     biased_federov_design,
+                                                                     prf_threshold = prf_threshold)
+
             fit_distance = compare_fit(coefficients,
                                        fit_comparison_sample,
                                        formula,
@@ -283,6 +342,8 @@ linear_experiment <- function(coefficient_number,
                                          names                      = c("Federov with Uniform Sample", "Federov with Biased Sample"),
                                          id                         = current_uuid,
                                          prft                       = prf_threshold,
+                                         false_positives            = coefficient_errors$false_positives,
+                                         false_negatives            = coefficient_errors$false_negatives,
                                          noise                      = noise_sd,
                                          coefficient_probability    = coefficient_probability,
                                          regression_model           = "linear",
@@ -375,6 +436,13 @@ quadratic_experiment <- function(coefficient_number,
                                                                          biased_federov_design,
                                                                          prf_threshold = prf_threshold)
 
+            coefficient_errors = count_post_anova_coefficient_errors(coefficients,
+                                                                     coefficient_variability,
+                                                                     response_formula,
+                                                                     federov_design,
+                                                                     biased_federov_design,
+                                                                     prf_threshold = prf_threshold)
+
             fit_distance = compare_fit(coefficients,
                                        fit_comparison_sample,
                                        formula,
@@ -403,6 +471,8 @@ quadratic_experiment <- function(coefficient_number,
                                          names                      = c("Federov with Uniform Sample", "Federov with Biased Sample"),
                                          id                         = current_uuid,
                                          prft                       = prf_threshold,
+                                         false_positives            = coefficient_errors$false_positives,
+                                         false_negatives            = coefficient_errors$false_negatives,
                                          noise                      = noise_sd,
                                          coefficient_probability    = coefficient_probability,
                                          regression_model           = "quadratic",
@@ -440,8 +510,8 @@ run_experiments <- function() {
     #noise_sd <- c(1.0, 2.0, 4.0, 8.0, 16.0, 32.0, 64.0)
     #prf_threshold <- c(0.1, 0.01, 0.001)
 
-    noise_sd <- c(4.0)
-    prf_threshold <- c(0.01)
+    noise_sd <- c(16.0)
+    prf_threshold <- c(0.001)
 
     coefficient_probability <- 0.15
     coefficient_variability <- list(max = 7, min = 1)
