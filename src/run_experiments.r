@@ -499,19 +499,15 @@ run_experiments <- function() {
 
     data <- NULL
 
-    #runs <- 100
-    runs <- 1
+    runs <- 10
     factors <- 60
 
     federov_samples <- 1000
     fit_comparison_sample_size <- 1000
 
     normal_samples_sd <- 0.04
-    #noise_sd <- c(1.0, 2.0, 4.0, 8.0, 16.0, 32.0, 64.0)
-    #prf_threshold <- c(0.1, 0.01, 0.001)
-
-    noise_sd <- c(1.0)
-    prf_threshold <- c(0.01)
+    noise_sd <- c(1.0, 2.0, 4.0, 8.0, 16.0, 32.0, 64.0)
+    prf_threshold <- c(0.1, 0.01, 0.001)
 
     coefficient_probability <- 0.15
     coefficient_variability <- list(max = 7, min = 1)
