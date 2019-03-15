@@ -2,7 +2,7 @@
 
 echo "Installing R packages"
 
-Rscript -e 'install.packages(c("AlgDesign", "rsm", "uuid", "dplyr", repos="https://cran.rstudio.com")'
+Rscript -e 'install.packages(c("AlgDesign", "rsm", "uuid", "dplyr"), repos="https://cran.rstudio.com")'
 
 CLONE_TARGET="/root/dopt_sampling_tests"
 
