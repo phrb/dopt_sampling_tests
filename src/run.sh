@@ -36,4 +36,4 @@ mv $OUTPUT_FILE $NODE_NAME
 mv ${APP_TARGET}/${NODE_NAME} /tmp/
 
 su ${USR} -c "mkdir -p ${USR_TARGET}"
-su ${USR} -c "cp /tmp/${NODE_NAME} ${USR_TARGET}"
+su ${USR} -c "cp -r /tmp/${NODE_NAME} ${USR_TARGET}"
