@@ -15,9 +15,9 @@ else
 fi
 
 USR="pbruel"
-USR_TARGET="/home/${USR}/dopt_sampling_tests/data/results/"
+USR_TARGET="/home/${USR}/dopt_sampling_tests/data/coefficient_sampling/"
 
-APP_TARGET="/root/dopt_sampling_tests/src/"
+APP_TARGET="/root/dopt_sampling_tests/src/coefficient_sampling/"
 cd $APP_TARGET
 
 OUTPUT_FILE="results.csv"

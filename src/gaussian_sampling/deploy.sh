@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "Deploying orio_experiments image"
+echo "Deploying debian image"
 
 kadeploy3 -f ${OAR_NODE_FILE} -e debian9-x64-big -k
 
@@ -9,5 +9,5 @@ sleep 10
 
 echo "Launching jobs"
 
-JOB_SCRIPT="/home/pbruel/dopt_sampling_tests/src/run.sh"
+JOB_SCRIPT="/home/pbruel/dopt_sampling_tests/src/gaussian_sampling/run.sh"
 taktuk -c "ssh" -l root -f <( uniq ${OAR_FILE_NODES} ) broadcast exec [ ${JOB_SCRIPT} ]
