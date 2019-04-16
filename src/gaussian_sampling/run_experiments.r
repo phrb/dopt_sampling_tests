@@ -1,6 +1,7 @@
 library(Rcpp)
 library(rsm)
 library(dplyr)
+library(tidyr)
 library(AlgDesign)
 library(uuid)
 library(MASS)
@@ -63,19 +64,61 @@ biased_sample <- function(sampling_cdf, size, factors, name) {
         encode_design()
 }
 
-filter_formula <- function(complete_formula, p_values, filter_threshold){
+filter_formula <- function(complete_formula,
+                           p_values,
+                           filter_threshold,
+                           group_factor_terms = FALSE) {
     formula_terms <- str_split(paste(deparse(complete_formula), collapse = ""), " ")[[1]]
-    filtered_variables <- subset(p_values, values <= filter_threshold)$variables
 
-    filtered_terms <- paste(formula_terms[str_detect(formula_terms,
-                                                     paste(filtered_variables,
-                                                           collapse = "|"))],
-                            collapse = " + ")
+    if(group_factor_terms) {
+        p_values$variables <- str_replace_all(p_values$variables,
+                                              "I\\(|\\^2\\)",
+                                              "")
+        filtered_variables <- subset(p_values, values <= filter_threshold)$variables
+
+        filtered_terms <- paste(formula_terms[str_detect(formula_terms,
+                                                         paste(filtered_variables,
+                                                               collapse = "|"))],
+                                collapse = " + ")
+    } else {
+        filtered_terms <- paste(subset(p_values, values <= filter_threshold)$variables,
+                                collapse = " + ")
+    }
 
     update.formula(complete_formula, paste(". ~ ", filtered_terms, sep = ""))
 }
 
-compare_fit <- function(testing_sample, design, formula, filter_thresholds) {
+compute_significance_errors <- function(p_values,
+                                        filter_threshold,
+                                        gaussian_lengthscale,
+                                        gaussian_significance_thresholds) {
+    filtered_variables <- unique(subset(p_values, values <= filter_threshold)$variables)
+
+    selected_significant <- data.frame(t(rep(TRUE, length(filtered_variables))))
+    names(selected_significant) <- filtered_variables
+
+    real_significant <- data.frame(t(gaussian_lengthscale <=
+                                     gaussian_significance_thresholds$min))
+    names(real_significant) <- paste("x", 1:length(lengthscale), sep = "")
+
+    significances <- bind_rows(real_significant,
+                               selected_significant)
+
+    significances[is.na(significances)] <- FALSE
+
+    errors <- data.frame(true_positives = sum(significances[2, ] & significances[1, ]),
+                         false_positives = sum(significances[2, ] & !significances[1, ]),
+                         false_negatives = sum(!significances[2, ] & significances[1, ]),
+                         model_positives = sum(significances[2, ] & TRUE),
+                         real_positives = sum(significances[1, ] & TRUE))
+}
+
+compare_fit <- function(testing_sample,
+                        design,
+                        formula,
+                        filter_thresholds,
+                        gaussian_lengthscale,
+                        gaussian_significance_thresholds) {
     formula <- formula %>% update.formula(Y ~ .)
 
     complete_sample <- bind_rows(testing_sample, design)
@@ -84,21 +127,21 @@ compare_fit <- function(testing_sample, design, formula, filter_thresholds) {
     p_values <- as.data.frame(anova_summary[[1]])["Pr(>F)"]
     names(p_values) <- c("values")
 
-    p_values$variables <- str_replace_all(str_trim(rownames(p_values)),
-                                          "I\\(|\\^2\\)",
-                                          "")
+    p_values$variables <- str_trim(rownames(p_values))
     rownames(p_values) <- NULL
 
+    lengthscale_data <- data.frame(t(gaussian_lengthscale))
+    names(lengthscale_data) <- paste("lengthscale_x", 1:length(lengthscale), sep = "")
+
     results <- NULL
+
 
     for(filter_threshold in filter_thresholds) {
         selected <-nrow(subset(p_values, values <= filter_threshold))
 
         if(is.infinite(filter_threshold) | selected <= 0) {
-            loginfo("> Selecting all terms")
             filtered_formula <- formula
         } else {
-            loginfo("> Filtering based on p values")
             filtered_formula <- filter_formula(formula, p_values, filter_threshold)
         }
 
@@ -106,17 +149,30 @@ compare_fit <- function(testing_sample, design, formula, filter_thresholds) {
 
         fit_distance <- sqrt(sum((complete_sample$Y - predictions) ^ 2))
 
-        min_distance <- abs(unique(min(complete_sample$Y)) -
-                            unique(complete_sample$Y[predictions == min(predictions)]))
+        min_distance <- abs(min(complete_sample$Y) -
+                            complete_sample$Y[predictions == min(predictions)])
+
+
+        errors <- compute_significance_errors(p_values,
+                                              filter_threshold,
+                                              gaussian_lengthscale,
+                                              gaussian_significance_thresholds)
+
+        result <- data.frame(filter_threshold = filter_threshold,
+                             min_distance = min_distance,
+                             fit_distance = fit_distance,
+                             true_positives = errors$true_positives,
+                             false_positives = errors$false_positives,
+                             false_negatives = errors$false_negatives,
+                             model_positives = errors$model_positives,
+                             real_positives = errors$real_positives)
+
+        result <- bind_cols(result, lengthscale_data)
 
         if(is.null(results)) {
-            results <- data.frame(filter_threshold = filter_threshold,
-                                  min_distance = min_distance,
-                                  fit_distance = fit_distance)
+            results <- result
         } else {
-            results <- bind_rows(results, data.frame(filter_threshold = filter_threshold,
-                                                     min_distance = min_distance,
-                                                     fit_distance = fit_distance))
+            results <- bind_rows(results, result)
         }
     }
 
@@ -132,7 +188,8 @@ compare_sampling_strategies <- function (uniform_strategy_cdf,
                                          regression_formula,
                                          filter_thresholds,
                                          gaussian_amplitude,
-                                         gaussian_lengthscale) {
+                                         gaussian_lengthscale,
+                                         gaussian_significance_thresholds) {
     loginfo("> Starting to generate samples")
 
     testing_sample <- biased_sample(uniform_strategy_cdf,
@@ -181,7 +238,9 @@ compare_sampling_strategies <- function (uniform_strategy_cdf,
                                           sampled_data %>%
                                           subset(name == "uniform"),
                                           regression_formula,
-                                          filter_thresholds)
+                                          filter_thresholds,
+                                          gaussian_lengthscale,
+                                          gaussian_significance_thresholds)
 
     uniform_fit_comparison$name <- "uniform"
 
@@ -192,7 +251,9 @@ compare_sampling_strategies <- function (uniform_strategy_cdf,
                                          sampled_data %>%
                                          subset(name == "biased"),
                                          regression_formula,
-                                         filter_thresholds)
+                                         filter_thresholds,
+                                         gaussian_lengthscale,
+                                         gaussian_significance_thresholds)
 
     biased_fit_comparison$name <- "biased"
 
@@ -209,11 +270,18 @@ run_experiments <- function(iterations) {
     factors <- list(linear = 30,
                     quadratic = 30)
 
-    significance_probability <- 0.15
-    insignificance_variability <- list(max = 100.0, min = 10.0)
-    significance_variability <- list(max = 5.0, min = 0.5)
+    model_size <- list(linear = 30,
+                       quadratic = 60)
 
-    amplitude_variability <- list(max = 5.0, min = 1.0)
+    significance_probability <- 0.2
+
+    insignificance_variability <- list(max = 2000.0, min = 10.0)
+    significance_variability <- list(max = 2.0, min = 0.2)
+
+    significance_thresholds <- list(min = significance_variability$max,
+                                    max = insignificance_variability$min)
+
+    amplitude_variability <- list(max = 20.0, min = 1.0)
 
     strategy_cdfs <- list(uniform = cdf_data %>%
                               subset(name == "uniform") %>%
@@ -272,16 +340,20 @@ run_experiments <- function(iterations) {
             result <- compare_sampling_strategies(uniform_strategy_cdf = strategy_cdfs["uniform"][[1]],
                                                   biased_strategy_cdf = strategy_cdfs[model][[1]],
                                                   factors = factors[model][[1]],
-                                                  testing_sample_size = 50 * factors[model][[1]],
-                                                  selection_sample_size = 50 * factors[model][[1]],
+                                                  testing_sample_size = 100 * factors[model][[1]],
+                                                  selection_sample_size = 100 * factors[model][[1]],
                                                   design_size = design_sizes[model][[1]],
                                                   regression_formula = model_formulas[model][[1]],
                                                   filter_thresholds = c(Inf, 0.1, 0.01, 0.001),
                                                   gaussian_amplitude = amplitude,
-                                                  gaussian_lengthscale = lengthscale)
+                                                  gaussian_lengthscale = lengthscale,
+                                                  gaussian_significance_thresholds = significance_thresholds)
 
             result$model <- model
-            result$iteration <- iteration
+            result$id <- UUIDgenerate()
+            result$factors <- factors[model][[1]]
+            result$model_size <- model_size[model][[1]]
+            result$amplitude <- amplitude
 
             if(is.null(results)) {
                 results <- result
@@ -290,8 +362,9 @@ run_experiments <- function(iterations) {
             }
         }
     }
-    #write.csv(data, "results.csv", row.names = FALSE)
+
+    write.csv(results, "results.csv", row.names = FALSE)
     return(results)
 }
 
-test <- run_experiments(1)
+test <- run_experiments(5)
