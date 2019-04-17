@@ -276,13 +276,13 @@ run_experiments <- function(iterations) {
     filter_thresholds <- c(Inf, 0.1, 0.01, 0.001)
 
     significance_probability <- 0.1
-    insignificance_variability <- list(max = 30.0, min = 10.0)
-    significance_variability <- list(max = 0.5, min = 0.05)
+    insignificance_variability <- list(max = 10.0, min = 5.0)
+    significance_variability <- list(max = 1.1, min = 0.9)
 
     significance_thresholds <- list(min = significance_variability$max,
                                     max = insignificance_variability$min)
 
-    amplitude_variability <- list(max = 3.0, min = 0.5)
+    amplitude_variability <- list(max = 1.5, min = 1.0)
 
     strategy_cdfs <- list(uniform = cdf_data %>%
                               subset(name == "uniform") %>%
