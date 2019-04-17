@@ -117,12 +117,17 @@ compare_fit <- function(testing_sample,
                         design,
                         formula,
                         filter_thresholds,
+                        noise_sd,
                         gaussian_lengthscale,
                         gaussian_significance_thresholds) {
     formula <- formula %>% update.formula(Y ~ .)
 
+    design_with_noise <- design
+    design_with_noise$Y <- design_with_noise$Y + rnorm(1, mean = 0.0, sd = noise_sd)
+
+    anova_summary <- summary(aov(formula, design_with_noise))
+
     complete_sample <- bind_rows(testing_sample, design)
-    anova_summary <- summary(aov(formula, design))
 
     p_values <- as.data.frame(anova_summary[[1]])["Pr(>F)"]
     names(p_values) <- c("values")
@@ -145,7 +150,7 @@ compare_fit <- function(testing_sample,
             filtered_formula <- filter_formula(formula, p_values, filter_threshold)
         }
 
-        predictions <- predict(lm(filtered_formula, design), complete_sample)
+        predictions <- predict(lm(filtered_formula, design_with_noise), complete_sample)
 
         fit_distance <- sqrt(sum((complete_sample$Y - predictions) ^ 2))
 
@@ -179,17 +184,18 @@ compare_fit <- function(testing_sample,
     return(results)
 }
 
-compare_sampling_strategies <- function (uniform_strategy_cdf,
-                                         biased_strategy_cdf,
-                                         factors,
-                                         testing_sample_size,
-                                         selection_sample_size,
-                                         design_size,
-                                         regression_formula,
-                                         filter_thresholds,
-                                         gaussian_amplitude,
-                                         gaussian_lengthscale,
-                                         gaussian_significance_thresholds) {
+compare_sampling_strategies <- function(uniform_strategy_cdf,
+                                        biased_strategy_cdf,
+                                        factors,
+                                        testing_sample_size,
+                                        selection_sample_size,
+                                        design_size,
+                                        regression_formula,
+                                        filter_thresholds,
+                                        noise_sd,
+                                        gaussian_amplitude,
+                                        gaussian_lengthscale,
+                                        gaussian_significance_thresholds) {
     loginfo("> Starting to generate samples")
 
     testing_sample <- biased_sample(uniform_strategy_cdf,
@@ -239,6 +245,7 @@ compare_sampling_strategies <- function (uniform_strategy_cdf,
                                           subset(name == "uniform"),
                                           regression_formula,
                                           filter_thresholds,
+                                          noise_sd,
                                           gaussian_lengthscale,
                                           gaussian_significance_thresholds)
 
@@ -252,6 +259,7 @@ compare_sampling_strategies <- function (uniform_strategy_cdf,
                                          subset(name == "biased"),
                                          regression_formula,
                                          filter_thresholds,
+                                         noise_sd,
                                          gaussian_lengthscale,
                                          gaussian_significance_thresholds)
 
@@ -274,6 +282,7 @@ run_experiments <- function(iterations) {
                        quadratic = 60)
 
     filter_thresholds <- c(Inf, 0.1, 0.01, 0.001)
+    noise_sd <- 4.0
 
     significance_probability <- 0.1
     insignificance_variability <- list(max = 10.0, min = 5.0)
@@ -346,6 +355,7 @@ run_experiments <- function(iterations) {
                                                   design_size = design_sizes[model][[1]],
                                                   regression_formula = model_formulas[model][[1]],
                                                   filter_thresholds = filter_thresholds,
+                                                  noise_sd = noise_sd,
                                                   gaussian_amplitude = amplitude,
                                                   gaussian_lengthscale = lengthscale,
                                                   gaussian_significance_thresholds = significance_thresholds)
