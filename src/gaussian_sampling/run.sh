@@ -1,19 +1,8 @@
 #! /bin/bash
 
-echo "Installing Julia"
-
-wget https://julialang-s3.julialang.org/bin/linux/x64/1.1/julia-1.1.0-linux-x86_64.tar.gz
-tar xvf julia-1.1.0-linux-x86_64.tar.gz
-
-JULIA_PROGRAM="julia-1.1.0/bin/julia"
-
-echo "Installing Julia Packages"
-
-$JULIA_PROGRAM -e 'using Pkg; Pkg.add(["Distributions", "DataFrames", "CSV", "RCall"]);'
-
 echo "Installing R packages"
 
-Rscript -e 'install.packages(c("AlgDesign", "rsm", "uuid", "dplyr"), repos="https://cran.rstudio.com")'
+Rscript -e 'install.packages(c("AlgDesign", "rsm", "uuid", "dplyr", "Rcpp", "tidyr", "MASS", "logging", "stringr"), repos="https://cran.rstudio.com")'
 
 CLONE_TARGET="/root/dopt_sampling_tests"
 

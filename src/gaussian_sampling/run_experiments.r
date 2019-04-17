@@ -72,7 +72,7 @@ filter_formula <- function(complete_formula,
 
     if(group_factor_terms) {
         p_values$variables <- str_replace_all(p_values$variables,
-                                              "I\\(|\\^2\\)",
+                                              "I\\(|\\^2\\)|\\^3\\)",
                                               "")
         filtered_variables <- subset(p_values, values <= filter_threshold)$variables
 
@@ -99,7 +99,7 @@ compute_significance_errors <- function(p_values,
 
     real_significant <- data.frame(t(gaussian_lengthscale <=
                                      gaussian_significance_thresholds$min))
-    names(real_significant) <- paste("x", 1:length(lengthscale), sep = "")
+    names(real_significant) <- paste("x", 1:length(gaussian_lengthscale), sep = "")
 
     significances <- bind_rows(real_significant,
                                selected_significant)
@@ -131,7 +131,7 @@ compare_fit <- function(testing_sample,
     rownames(p_values) <- NULL
 
     lengthscale_data <- data.frame(t(gaussian_lengthscale))
-    names(lengthscale_data) <- paste("lengthscale_x", 1:length(lengthscale), sep = "")
+    names(lengthscale_data) <- paste("lengthscale_x", 1:length(gaussian_lengthscale), sep = "")
 
     results <- NULL
 
@@ -150,7 +150,7 @@ compare_fit <- function(testing_sample,
         fit_distance <- sqrt(sum((complete_sample$Y - predictions) ^ 2))
 
         min_distance <- abs(min(complete_sample$Y) -
-                            complete_sample$Y[predictions == min(predictions)])
+                            complete_sample$Y[predictions == min(predictions)][1])
 
 
         errors <- compute_significance_errors(p_values,
@@ -273,15 +273,16 @@ run_experiments <- function(iterations) {
     model_size <- list(linear = 30,
                        quadratic = 60)
 
-    significance_probability <- 0.2
+    filter_thresholds <- c(Inf, 0.1, 0.01, 0.001)
 
-    insignificance_variability <- list(max = 2000.0, min = 10.0)
-    significance_variability <- list(max = 2.0, min = 0.2)
+    significance_probability <- 0.1
+    insignificance_variability <- list(max = 30.0, min = 10.0)
+    significance_variability <- list(max = 0.5, min = 0.05)
 
     significance_thresholds <- list(min = significance_variability$max,
                                     max = insignificance_variability$min)
 
-    amplitude_variability <- list(max = 20.0, min = 1.0)
+    amplitude_variability <- list(max = 3.0, min = 0.5)
 
     strategy_cdfs <- list(uniform = cdf_data %>%
                               subset(name == "uniform") %>%
@@ -303,8 +304,8 @@ run_experiments <- function(iterations) {
                            quadratic = paste("x", 1:factors$quadratic, sep = "") %>%
                                paste(sep = "", collapse = " + ") %>%
                                paste("+ ") %>%
-                               paste(., paste("I(",
-                                              factor_names,
+                               paste(., paste("I(x",
+                                              1:factors$quadratic,
                                               "^2)",
                                               collapse = " + ",
                                               sep = "")) %>%
@@ -344,7 +345,7 @@ run_experiments <- function(iterations) {
                                                   selection_sample_size = 100 * factors[model][[1]],
                                                   design_size = design_sizes[model][[1]],
                                                   regression_formula = model_formulas[model][[1]],
-                                                  filter_thresholds = c(Inf, 0.1, 0.01, 0.001),
+                                                  filter_thresholds = filter_thresholds,
                                                   gaussian_amplitude = amplitude,
                                                   gaussian_lengthscale = lengthscale,
                                                   gaussian_significance_thresholds = significance_thresholds)
@@ -367,4 +368,5 @@ run_experiments <- function(iterations) {
     return(results)
 }
 
-test <- run_experiments(5)
+# test <- run_experiments(1)
+run_experiments(10)
